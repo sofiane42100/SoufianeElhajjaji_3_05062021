@@ -5,64 +5,190 @@
  .logo
    {
     width: 40%;
-    margin-left: 75px;
+    margin-left: 105px;
+    margin-top: 10px;
+    margin-bottom: 10px;
    }
   
   .local 
    {
     width: 100%;
     height: 40px;
-    border: 1px solid black;
-   }
-    .local.text
-   {
-     margin:auto;
+    background-color: #eaeaea;
+    box-shadow: inset 0px 3px #d5d5d5 ;
+    }
+    
+
+    .inside-local
+    {
+     margin-left: 105px;
+     padding-top: 10px;
      color: black;
-   }
+    }
+    .local-text
+    {
+     margin-left: 10px;
+    }
+   
+   
   header 
-  {
+    {
       background-color: #f6f6f6;
-  }
+      margin-top: -22px;
+      text-align: center;
+      height: 300px;
+
+        & p
+        {
+            font-size: large;
+        }
+        & h1 
+        {
+            padding-top: 45px;
+        }
+        
+    }
+  .explorer
+    {
+        border-radius: 20px;
+        height: 40px;
+        width: 50%;
+        background-color: #a75cdc;
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 15px;
+    }
+    
   .container
-  {
+    {
       display: flex;
       flex-direction: column-reverse;
-  }
+    }
   section
-  {
+    { 
       background-color: #f6f6f6;
+      width: 100%;
+      height: 100%;
       
 
       &-carte
       {
-           width: 90%;
-      height: 60%;
-      text-decoration: none;
-      color: black;
-      margin-left: 30px;
+        width: 100%;
+        color: black;
+        margin-left: 30px;
+        text-decoration: none;
 
       }
-  }
+    }
 
+    aside
+    {
+        text-decoration: none;
+    }
+    .titre
+     {
+         margin-left: 30px;
+         font-weight: 20px;
+         font-size: 25px;
+         margin-top: 50px;
+         margin-bottom: 15px;
+     }
 
-  .resto
+    .fonction-texte
+    {
+        text-decoration: none;
+        background-color: #f6f6f6;
+        border-radius: 30px 30px 30px 30px;
+        margin-bottom: 15px;
+        height: 80px;
+         
+    
+         & p
+          {
+              display: inline-block;
+              margin-left: 20px;
+              margin-top: 28px;
+          }
+    }
+
+    .inside-fonction
+    {
+        margin-left: 70px;
+        text-decoration: none;
+        color: black;
+        font-weight: 300;
+        font-size: large;
+    }
+
+  .section-carte
   {
+      text-decoration: none;
+      
+  }
+  .resto
+   {
       width: 80%;
       height: 190px;
       border-radius: 20px 20px 0px 0px; 
       margin-top: 15px; 
+      margin-left: 37px;
 
       &-texte {
-          width: 80%;
-      background-color: white;
-      text-decoration: none;
-      margin-top: -15px;
-      margin-left: 45px;
-      border-radius: 0 0 20px 20px;
-      text-align: center;
+        width: 80%;
+        height: 70px;
+        background-color: white;
+        margin-top: -19px;
+        margin-left: 37px;
+        border-radius: 0 0 20px 20px;
+        color: black;
+        }
+
+    }
+
+    footer
+     {
+         margin-top: 15px;
+         height: 180px;
+         background-color: #353535;
+         color: white;
+         text-decoration: none;
+     }
+
+    .logo-footer
+     {
+         width: 20%;
+         color: white;
+         margin-bottom: 15px;
+         margin-top: 15px;
+         margin-left: 15px;
+     }
+
+     .menu-footer
+     {
+         color: white;
+         text-decoration: white;
+
+         &1
+         {
+             margin-left: 15px;
+             margin-bottom: 10px;
+         }
+     }
+     .menu-footer2 
+     {
+         text-decoration: none;
+         color: white;
+         margin-left: 5px;
+     }
+     .menu-footer3
+     {
+         text-decoration: none;
+         color: white;
+         margin-left: 15px;
+         margin-bottom: 10px;
+         display: block;
+     }
+     
       
-      }
-  }
-  
 
 }
