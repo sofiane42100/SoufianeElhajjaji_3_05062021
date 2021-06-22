@@ -18,7 +18,7 @@
     width: 100%;
   }
   .titre {
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 600;
     padding-top: 20px;
     padding-left: 10px;
@@ -68,14 +68,18 @@
     margin-bottom: 20px;
     margin-left: 20px;
   }
-  .commander {
+  .btn {
     border-radius: 20px;
-    height: 40px;
-    width: 50%;
-    background-color: #a75cdc;
+    height: 15px;
+    width: 40%;
+    margin: 5% auto;
+    background: -webkit-gradient(linear, left top, left bottom, from(#d14cb4fb), to(#a75cdc));
+    background: linear-gradient(#d14cb4fb, #a75cdc);
     color: #ffffff;
     font-weight: 300;
     font-size: 15px;
+    text-align: center;
+    padding: 10px 0px;
   }
   footer {
     height: 180px;
@@ -112,4 +116,4 @@
     display: block;
   }
 }
-/*# sourceMappingURL=style(a la francaise).css.map */
+/*# sourceMappingURL=style(le délice des sens).css.map */
