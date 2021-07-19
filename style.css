@@ -8,6 +8,9 @@
 }
 
 @media all and (max-width: 667px) {
+  body {
+    margin: 0;
+  }
   .logo {
     width: 40%;
     margin-left: 105px;
@@ -43,12 +46,16 @@
   }
   .explorer {
     border-radius: 20px;
-    height: 40px;
-    width: 50%;
-    background-color: #a75cdc;
+    height: 15px;
+    width: 40%;
+    margin: 5% auto;
+    background: -webkit-gradient(linear, left top, left bottom, from(#d14cb4fb), to(#a75cdc));
+    background: linear-gradient(#d14cb4fb, #a75cdc);
     color: #ffffff;
     font-weight: 300;
     font-size: 15px;
+    text-align: center;
+    padding: 10px 0px;
   }
   .container {
     display: -webkit-box;
@@ -64,7 +71,7 @@
     width: 100%;
     height: 100%;
   }
-  section-carte {
+  section -carte {
     width: 100%;
     color: black;
     margin-left: 30px;
@@ -75,7 +82,6 @@
   }
   .titre {
     margin-left: 30px;
-    font-weight: 20px;
     font-size: 25px;
     margin-top: 50px;
     margin-bottom: 15px;
@@ -83,26 +89,46 @@
   .fonction-texte {
     text-decoration: none;
     background-color: #f6f6f6;
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 15px 15px 15px 15px;
     margin-bottom: 15px;
-    height: 80px;
+    height: 70px;
+    -webkit-box-shadow: 5px 5px  #f6f6f6;
+            box-shadow: 5px 5px  #f6f6f6;
+  }
+  .fonction-texte:hover {
+    background-color: #d5d5d5;
+  }
+  .fonction-texte .num {
+    text-decoration: none;
+    font-size: 15px;
+    border: 1px solid #9356dc;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    background-color: #9356dc;
+    color: white;
+    margin-right: 20px;
+    margin-left: -8px;
   }
   .fonction-texte p {
     display: inline-block;
     margin-left: 20px;
     margin-top: 28px;
+    font-size: 15px;
   }
   .inside-fonction {
-    margin-left: 70px;
     text-decoration: none;
     color: black;
     font-weight: 300;
     font-size: large;
+    display: inline-block;
   }
   .section-carte {
     text-decoration: none;
   }
-  .resto {
+  .resto-image {
     width: 80%;
     height: 190px;
     border-radius: 20px 20px 0px 0px;
@@ -119,6 +145,41 @@
     color: black;
     padding-top: 10px;
     padding-left: 5px;
+  }
+  .resto-heart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: translate(85%);
+            transform: translate(85%);
+  }
+  .resto-heart .fas {
+    margin-top: -50px;
+    font-size: 25px;
+    font-weight: lighter;
+    margin-left: -18px;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    color: #9356dc;
+    opacity: 0;
+    display: block;
+  }
+  .resto-heart .fas:hover {
+    opacity: 1;
+  }
+  .resto-heart .far {
+    margin-top: -50px;
+    font-size: 25px;
+    font-weight: lighter;
+    margin-left: -18px;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    color: black;
+  }
+  .resto-heart .far:hover {
+    opacity: 0;
   }
   footer {
     margin-top: 15px;

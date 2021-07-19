@@ -1,6 +1,7 @@
 @font-face {
   font-family: "police";
   src: url(roboto/Roboto-Black.ttf);
+
 }
 
 :root{
@@ -10,8 +11,11 @@
 
 @media all and (max-width: 667px)
 {
-    
-
+ 
+body 
+{
+  margin: 0;
+}
  .logo
    {
     width: 40%;
@@ -60,13 +64,16 @@
     }
   .explorer
     {
-        border-radius: 20px;
-        height: 40px;
-        width: 50%;
-        background-color: #a75cdc;
-        color: #ffffff;
-        font-weight: 300;
-        font-size: 15px;
+      border-radius: 20px;
+      height: 15px;
+      width: 40%;
+      margin: 5% auto;
+      background: linear-gradient(#d14cb4fb ,#a75cdc);
+      color: #ffffff;
+      font-weight: 300;
+      font-size: 15px;
+      text-align: center;
+      padding: 10px 0px;
     }
     
   .container
@@ -81,7 +88,7 @@
       height: 100%;
       
 
-      &-carte
+      & -carte
       {
         width: 100%;
         color: black;
@@ -95,39 +102,67 @@
     {
         text-decoration: none;
     }
+
+
+
     .titre
      {
          margin-left: 30px;
-         font-weight: 20px;
          font-size: 25px;
          margin-top: 50px;
          margin-bottom: 15px;
      }
+     
 
     .fonction-texte
     {
         text-decoration: none;
         background-color: #f6f6f6;
-        border-radius: 30px 30px 30px 30px;
+        border-radius: 15px 15px 15px 15px;
         margin-bottom: 15px;
-        height: 80px;
+        height: 70px;
+        box-shadow: 5px 5px  #f6f6f6;
+
+        &:hover
+        {
+          background-color: #d5d5d5;
+        }
+    
          
+      .num        
+        {
+          text-decoration: none;
+          font-size: 15px;
+          border: 1px solid #9356dc;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          display: inline-block;
+          text-align: center;
+          background-color: #9356dc;
+          color: white;
+          margin-right: 20px;
+          margin-left: -8px;
+        }
+
+
     
          & p
           {
               display: inline-block;
               margin-left: 20px;
               margin-top: 28px;
+              font-size: 15px;
           }
     }
 
     .inside-fonction
-    {
-        margin-left: 70px;
+     {
         text-decoration: none;
         color: black;
         font-weight: 300;
         font-size: large;
+        display: inline-block;
     }
 
   .section-carte
@@ -137,11 +172,14 @@
   }
   .resto
    {
+
+    &-image{
       width: 80%;
       height: 190px;
       border-radius: 20px 20px 0px 0px; 
       margin-top: 15px; 
       margin-left: 37px;
+    }
 
       &-texte {
         width: 80%;
@@ -155,7 +193,48 @@
         padding-left: 5px;
         }
 
-    }
+        &-heart
+        {
+          display: flex;
+          transform: translate(85%);
+         
+          & .fas
+          {
+            margin-top: -50px;
+            font-size: 25px;
+            font-weight: lighter;
+            margin-left: -18px;
+            position: relative;
+            z-index: 1;
+            text-decoration: none;
+            color:#9356dc;
+            opacity: 0;
+            display: block;
+
+            &:hover
+            {
+              opacity: 1;
+            }
+          }
+
+          & .far  
+          {
+            margin-top: -50px;
+            font-size: 25px;
+            font-weight: lighter;
+            margin-left: -18px;
+            position: relative;
+            z-index: 1;
+            text-decoration: none;
+            color: black;
+            
+            &:hover
+            {
+              opacity: 0;
+            }
+        }
+       }
+      }
 
     footer
      {
@@ -203,4 +282,4 @@
      
       
 
-}
+    }
