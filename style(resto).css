@@ -25,13 +25,7 @@
     font-weight: 600;
     padding-top: 20px;
     padding-left: 10px;
-    padding-bottom: 5px;
-  }
-  .trait {
-    background: #99E2D0;
-    width: 40px;
-    height: 3px;
-    margin-left: 10px;
+    padding-bottom: 15px;
   }
   .section {
     background-color: #f6f6f6;
@@ -133,7 +127,7 @@
   }
   .titre1 {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     margin-left: 20px;
   }
   .trait {
@@ -141,6 +135,8 @@
     height: 3px;
     width: 40px;
     margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 20px;
   }
   .btn {
     border-radius: 20px;
