@@ -3,7 +3,7 @@
   src: url("../roboto/Roboto-Black.ttf");
 }
 
-
+   
 
 body 
 {
@@ -45,6 +45,7 @@ body::after
     margin-bottom: 10px;
     margin-left: 500px;
     padding-top: 15px;
+    
    }
   
   .local 
@@ -311,6 +312,7 @@ body::after
               padding: 5px;
               font-size: 2em;
               position: absolute;  
+              
             
           
            &-1 {
@@ -323,6 +325,7 @@ body::after
               }
             }
       }
+
       }
 
     footer

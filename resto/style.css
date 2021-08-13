@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "police";
+  font-family: "reboto";
   src: url("../roboto/Roboto-Regular.ttf");
 }
-:root {
-  font-family: "police";
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../Shrikhand-Regular.ttf");
 }
-
 @keyframes apparition {
   0% {
     opacity: 0;
@@ -30,13 +30,36 @@ body {
 }
 
 .titre {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 600;
   padding-top: 20px;
   padding-left: 10px;
   padding-bottom: 15px;
   grid-column: 1/4;
   grid-row: 1/2;
+  font-family: "Shrikhand";
+}
+.titre:hover .coeur-1 {
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+}
+.titre:hover .coeur-2 {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+.titre .coeur {
+  padding: 5px;
+  font-size: 1em;
+  position: absolute;
+  top: 47px;
+  right: 10px;
+}
+.titre .coeur-1 {
+  color: purple;
+  opacity: 0;
+}
+.titre .coeur-2 {
+  opacity: 1;
 }
 
 .section {
@@ -47,7 +70,7 @@ body {
   z-index: 10;
   position: relative;
   padding-left: 30px;
-  margin: 0;
+  font-family: "reboto";
 }
 
 .entres {
@@ -220,7 +243,7 @@ footer {
     padding-top: 20px;
     padding-left: 10px;
     padding-bottom: 15px;
-    font-style: italic;
+    font-family: "Shrikhand";
   }
 
   .section {
